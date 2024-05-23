@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/milad145/email-engine-core#readme",
   "dependencies": {
-    "@elastic/elasticsearch": "^8.13.1",
     "express": "^4.19.2",
     "nodemon": "^3.1.0"
   }
