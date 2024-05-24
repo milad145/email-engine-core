@@ -1,0 +1,7 @@
+{
+  "config": {
+    "port": 3000,
+    "redirectUrl": "http://localhost:3000/azure-oauth",
+    "scopes": ["https://graph.microsoft.com/.default"]
+  }
+}
