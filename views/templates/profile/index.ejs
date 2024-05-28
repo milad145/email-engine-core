@@ -20,9 +20,9 @@
             <div class="form-group">
                 <label for="exampleInputPassword1">Last Sync Time</label>
                 <% user.mailFolders.forEach(f =>{ %>
-                    <button class="btn btn-block btn-primary" id="exampleInputPassword1">
+                    <a href="/mails/<%=f%>" class="btn btn-block btn-primary" id="exampleInputPassword1">
                         <%= f %>
-                    </button>
+                    </a>
                 <% }) %>
             </div>
 
