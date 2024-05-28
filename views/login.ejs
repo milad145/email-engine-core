@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <%- include('./templates/common/head.ejs')%>
 </head>
 <body>
-<a href="/login-azure">Login Azure</a>
+
+<div class="background-image"></div>
+<div class="main">
+    <section class="sign-in">
+
+        <div class="signin-content">
+            <div class="signin-form">
+
+                <!--                    <button ng-click="authenticate('google')" class="btn btn-lg btn-default btn-block" type="button">Google</button>-->
+
+                <a href="/login-azure" class="btn btn-block btn-social btn-twitter">
+                    <span class="fa fa-envelope"></span> Sign in with Outlook
+                </a>
+                <a href="/login-google" class="btn btn-block btn-social btn-google disabled">
+                    <span class="fa fa-google"></span> Sign in with Google - soon
+                </a>
+                <a href="/login-facebook" disabled class="btn btn-block btn-social btn-facebook disabled">
+                    <span class="fa fa-facebook"></span> Sign in with Facebook - soon
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</div>
 </body>
 </html>

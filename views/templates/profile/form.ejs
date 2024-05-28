@@ -1,0 +1,36 @@
+<form id="uploadForm" onsubmit="getStatus(event);">
+
+
+    <div class="form-group ">
+        <label for="year">انتخاب سال</label>
+        <select required id="year" class="form-control">
+            <option value="1399">۱۳۹۹</option>
+            <option  value="1400">۱۴۰۰</option>
+            <option selected value="1401">۱۴۰۱</option>
+            <option value="1402">۱۴۰۲</option>
+            <option value="1403">۱۴۰۳</option>
+        </select>
+    </div>
+
+    <div class="form-group ">
+        <label for="month">انتخاب ماه</label>
+        <select required id="month" class="form-control">
+            <option selected value="1">فروردین</option>
+            <option value="2">اردیبهشت</option>
+            <option value="3">خرداد</option>
+            <option value="4">تیر</option>
+            <option value="5">مرداد</option>
+            <option value="6">شهریور</option>
+            <option value="7">مهر</option>
+            <option value="8">آبان</option>
+            <option value="9">آذر</option>
+            <option value="10">دی</option>
+            <option value="11">بهمن</option>
+            <option value="12">اسفند</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <button id="signUpSubmit" type="submit" class="btn btn-primary">مشاهده وضعیت ماه مورد نظر</button>
+    </div>
+</form>
