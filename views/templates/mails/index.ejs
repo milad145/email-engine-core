@@ -1,0 +1,39 @@
+<div class="rightSide">
+    <div class="container">
+        <div>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Folder<i class="fa fa-envelope-o"></i></th>
+                    <th scope="col">Sender</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Received At</th>
+                </tr>
+                </thead>
+                <tbody>
+                <% mails.forEach((mail, index) =>{ %>
+
+                    <tr id="<%=mail._id%>" class="pointer <%= mail.status ? '' : 'bold' %>">
+                        <th scope="row"><%= (index + 1) %></th>
+                        <td><%= mail.folder %></td>
+                        <td><%= mail.sender.name %></td>
+                        <td><%= mail.subject %></td>
+                        <td>
+                            <% if(mail.status){ %>
+                                <i class="fa fa-envelope-open-o"></i>
+                            <% }else{ %>
+                                <i class="fa fa-envelope"></i>
+                            <% } %>
+                        </td>
+                        <td><%= mail.receivedAt %></td>
+                    </tr>
+                <% }) %>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
