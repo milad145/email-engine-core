@@ -4,6 +4,11 @@
     <%- include('./templates/common/head.ejs')%>
 </head>
 <body>
+<%- include('./templates/common/header.ejs')%>
+<% if(page === 'profile'){%>
 <%- include('./templates/profile/index.ejs')%>
+<%}else if(page === 'mail'){%>
+<%- include('./templates/mail/index.ejs')%>
+<%}%>
 </body>
 </html>
