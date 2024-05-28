@@ -5,17 +5,13 @@ Backend Web Developer TakeHome Challenge: Email Engine Core
 
 1. Rename [sample.env](sample.env) to **.env** and open it in a text editor.
 
-1. Replace `YOUR_CLIENT_ID_HERE` with the client ID of your registered Azure application.
+1. Replace `your_azure_ad_client_id_here` with the client ID of your registered Azure application.
 
-1. Replace `YOUR_CLIENT_SECRET_HERE` with the client secret of your registered Azure application.
+1. Replace `azure_ad_client_secret_here` with the client secret of your registered Azure application.
 
-1. Replace `YOUR_TENANT_ID_HERE` with the tenant ID of your organization. This information can be found next to the client ID on the application management page, note: if you choose *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)* replace this value for "common".
+1. Replace `your_azure_redirect_uri_here` with the redirect uri of your registered Azure application.
 
-1. Replace `YOUR_NGROK_URL_HERE` with the HTTPS ngrok URL you copied earlier.
-
-1. (Optional) - You can update the `CERTIFICATE_PATH`, `CERTIFICATE_ID`, `PRIVATE_KEY_PATH`, and `PRIVATE_KEY_PASSWORD` if desired.
-
-1. (Optional) - If you are running the sample on Windows, you can provide a path to **openssl.exe** in the `WINDOWS_OPENSSL_PATH` value in **.env**.
+1. Replace `your_jwt_key_here` and `your_jwt_iv_here` with the jwt key and IV that you encrypt the access token for saving in the database.
 
 1. Install the dependencies running the following command:
 
