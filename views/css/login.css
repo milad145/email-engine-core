@@ -1,0 +1,61 @@
+.main {
+    padding: 150px 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    background-image: url(/images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #222;
+    background: #f8f8f8;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+.sign-in {
+    background: white;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#signin {
+    margin-top: 16px;
+}
+
+.signin-content {
+    padding-top: 67px;
+    padding-bottom: 87px;
+}
+
+.signin-form {
+    margin-right: 90px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

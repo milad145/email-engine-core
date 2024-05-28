@@ -1,0 +1,304 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(99, 99, 201);
+}
+
+.leftSide {
+    float: left;
+    width: 30%;
+}
+
+#leftPanel{
+    width: 95% !important;
+    background-color: #f8f9fa !important;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin: 50px auto;
+}
+
+.rightSide {
+    float: right;
+    width: 70%;
+}
+
+.container {
+    width: 95% !important;
+    background-color: #f8f9fa !important;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin: 50px auto;
+}
+
+.wrapper {
+    width: 50% !important;
+    max-width: 700px;
+    background-color: #f8f9fa !important;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin: 50px auto;
+    direction: rtl;
+    float: right;
+}
+
+#rightPanel {
+    width: 30% !important;
+    border-radius: .25rem;
+    margin: 50px auto;
+    direction: rtl;
+}
+
+#carPreview {
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.resultForm {
+    max-width: 900px;
+    display: none;
+    direction: rtl;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+#colorSelector > div {
+    background-color: #01ffff;
+    width: 100%;
+    height: 100%
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    background-color: #00000040;
+}
+
+#progress {
+    direction: ltr;
+}
+
+#blurSelector {
+    direction: ltr;
+}
+
+#publicKey {
+    direction: ltr;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.fullWidth {
+    width: 100% !important;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .container, .container * {
+        visibility: visible;
+    }
+
+    .container {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@page {
+    size: 35.7cm 25cm;
+    margin: 5mm auto; /* change the margins as you want them to be. */
+}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    font-size: 14px;
+}
+
+.tg .tg-cwv5 {
+    background-color: #ffffff;
+    vertical-align: center
+}
+
+.tg .tg-6qw1 {
+    background-color: #c0c0c0;
+    text-align: center;
+    vertical-align: center;
+    font-size: 14px;
+}
+.tg .tg-f14{
+    text-align: center;
+    vertical-align: center;
+    font-size: 14px;
+}
+
+.tg .tg-i81m {
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: center
+}
+
+.tg .tg-7yig {
+    background-color: #FFF;
+    text-align: center;
+    vertical-align: center
+}
+
+.tg .tg-jbyd {
+    background-color: #ffffff;
+    border-color: #000000;
+    text-align: center;
+    vertical-align: center
+}
+
+#receiptForm {
+    font-size: 12px !important;
+}
+
+#receiptForm .form-row {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 14px;
+}
+
+#header {
+    border: 1px solid black;
+    border-bottom: 0;
+}
+#info{
+    border-top: 1px solid black;
+}
+#header .form-group{
+    text-align: center;
+}
+#receiptForm #header .date{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#receiptForm #header img {
+    width: 30%;
+}
+
+#receiptForm .form-row div {
+    padding: 0;
+    margin: 0;
+}
+.b0 td{
+    border-bottom-width: 0;
+    border-top-width: 0;
+}
+.bt0 td{
+    border-top-width: 0;
+}
+.bl0 {
+    border-left-width: 0!important;
+}
+.br0{
+    border-right-width: 0!important;
+}
+.flatInput{
+    background-color:rgba(0,0,0,0);
+    border:0;
+}
+.main {
+    padding: 150px 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    background-image: url(/images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.clear {
+    clear: both;
+}
+
+.sign-in {
+    background: white;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+#signin {
+    margin-top: 16px;
+}
+
+.signin-content {
+    padding-top: 67px;
+    padding-bottom: 87px;
+}
+
+.signin-form {
+    margin-right: 90px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
