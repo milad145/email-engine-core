@@ -1,0 +1,14 @@
+
+    <div class="container">
+        <div>
+        <a href="/mails/<%=mail.folder%>" class="btn btn-info"> <%=mail.folder%></a>
+        <br/>
+        <br/>
+        <h3><%=mail.subject%></h3>
+        <p>from : <span class='bold'><%= mail.sender.name %></span> <span style="font-size:.8rem;"><%=mail.sender.email%></span></p>
+        <p>received at : <span class="bold"><%=mail.receivedAt%></span></p>
+        <p style="background-color:#e9e9e9;" class="p-3"><%-mail.body.replace(/\n/g,'<br/>')%></p>
+
+        </div>
+    </div>
+
