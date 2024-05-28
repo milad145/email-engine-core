@@ -13,13 +13,15 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Last Sync Time</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" disabled value="<%= new Date(user
-                        .lastSync) %>">
+                <div class="form-row">
+                <input type="text" class="form-control col-md-8"  id="exampleInputPassword1" disabled value="<%= user.lastSync? new Date(user.lastSync) : 'Not Synced' %>">
+                <button class="btn btn-primary col-md-4 sync-mails" id="syncMails-all">Sync</button>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="exampleInputPassword1">Last Sync Time</label>
-                <% user.mailFolders.forEach(f =>{ %>
+                <label for="exampleInputPassword1">User Mail Folders</label>
+                <% user.mailFolders && user.mailFolders.forEach(f =>{ %>
                     <a href="/mails/<%=f%>" class="btn btn-block btn-primary" id="exampleInputPassword1">
                         <%= f %>
                     </a>
