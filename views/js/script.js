@@ -28,4 +28,9 @@ $(document).ready(function () {
         syncMyMails(folder)
     })
 
+    $(".mails-list").on('click', function () {
+        let mailId = $(this).attr('id')
+        location.href=`/mail/${mailId}`
+    })
+
 })
