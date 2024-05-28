@@ -8,22 +8,8 @@ body {
     background-color: rgb(99, 99, 201);
 }
 
-.leftSide {
-    float: left;
-    width: 30%;
-}
-
-#leftPanel{
-    width: 95% !important;
-    background-color: #f8f9fa !important;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
-    margin: 50px auto;
-}
-
 .rightSide {
-    float: right;
-    width: 70%;
+    width: 100%;
 }
 
 .container {
@@ -172,7 +158,8 @@ body {
     vertical-align: center;
     font-size: 14px;
 }
-.tg .tg-f14{
+
+.tg .tg-f14 {
     text-align: center;
     vertical-align: center;
     font-size: 14px;
@@ -213,13 +200,16 @@ body {
     border: 1px solid black;
     border-bottom: 0;
 }
-#info{
+
+#info {
     border-top: 1px solid black;
 }
-#header .form-group{
+
+#header .form-group {
     text-align: center;
 }
-#receiptForm #header .date{
+
+#receiptForm #header .date {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -233,23 +223,29 @@ body {
     padding: 0;
     margin: 0;
 }
-.b0 td{
+
+.b0 td {
     border-bottom-width: 0;
     border-top-width: 0;
 }
-.bt0 td{
+
+.bt0 td {
     border-top-width: 0;
 }
+
 .bl0 {
-    border-left-width: 0!important;
+    border-left-width: 0 !important;
 }
-.br0{
-    border-right-width: 0!important;
+
+.br0 {
+    border-right-width: 0 !important;
 }
-.flatInput{
-    background-color:rgba(0,0,0,0);
-    border:0;
+
+.flatInput {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
 }
+
 .main {
     padding: 150px 0;
     width: 100vw;
@@ -302,3 +298,6 @@ body {
     flex-direction: column;
 }
 
+.bold {
+    font-weight: bold;
+}
