@@ -1,0 +1,52 @@
+    <div class="container">
+        <div>
+        <div class="row">
+        <div class="col-md-3">
+
+        <button class="btn btn-danger btn-block sync-mails" id="syncMails-<%=folder%>">
+        <i class="fa fa-refresh"></i>
+        Sync <%=folder%> mails
+
+        </button>
+        <a href="/mails" class="btn btn-block  <%= 'all'===folder?'btn-info':'btn-primary'%>" id="exampleInputPassword1">All</a>
+            <% mailFolders && mailFolders.forEach(f =>{ %>
+                                <a href="/mails/<%=f%>" class="btn btn-block <%= f===folder?'btn-info':'btn-primary'%>" id="exampleInputPassword1">
+                                    <%= f %>
+                                </a>
+                            <% }) %>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-striped">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Folder</th>
+                                <th scope="col">Sender</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Received At</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <% mails.forEach((mail, index) =>{ %>
+
+                                <tr id="<%=mail._id%>" class="mails-list pointer <%= mail.status ? '' : 'bold' %>">
+                                    <th scope="row"><%= (index + 1) %></th>
+                                    <td><%= mail.folder %></td>
+                                    <td><%= mail.sender.name %></td>
+                                    <td><%= mail.subject %></td>
+                                    <td>
+                                        <% if(mail.status){ %>
+                                            <i class="fa fa-envelope-open-o"></i>
+                                        <% }else{ %>
+                                            <i class="fa fa-envelope"></i>
+                                        <% } %>
+                                    </td>
+                                    <td><%= mail.receivedAt %></td>
+                                </tr>
+                            <% }) %>
+                            </tbody>
+                        </table>
+        </div>
+    </div>
+

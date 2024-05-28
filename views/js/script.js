@@ -1,21 +1,21 @@
-function login(e) {
-    e.preventDefault();
-    $("#errorForm").hide();
-    let userCode = $("#userCode").val();
-    let password = $("#password").val();
-    let userData = {userCode, password}
+function syncMyMails(folder) {
+    let userData = {folder}
 
     $.ajax({
         method: "POST",
-        url: "/panel/login",
+        url: "/sync-mails",
         data: userData,
     })
         .done(function (msg) {
-            if (msg) window.location.href = '/panel';
-            else $("#errorForm").show();
+            if (msg)
+                alert('sync has finished');
+            else
+                alert('something goes wrong');
+
+            location.reload();
         })
         .fail(function (error) {
-            $("#errorForm").show();
+            alert(error)
         });
 
 }
@@ -23,15 +23,14 @@ function login(e) {
 
 $(document).ready(function () {
 
-    $("#fullTime").on('change', () => {
-        let fullTime = !!parseInt($("#fullTime").val())
-        if (!fullTime) {
-            $("#startHourBox").hide()
-            $("#startHour").removeAttr('required', '');
-        } else {
-            $("#startHourBox").show()
-            $("#startHour").attr('required', '');
-        }
+    $(".sync-mails").on('click', function () {
+        let folder = $(this).attr('id').split('-')[1];
+        syncMyMails(folder)
+    })
+
+    $(".mails-list").on('click', function () {
+        let mailId = $(this).attr('id')
+        location.href=`/mail/${mailId}`
     })
 
 })
