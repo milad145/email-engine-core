@@ -1,5 +1,8 @@
     <div class="container">
         <div>
+        <div>
+        <button class="btn btn-primary sync-mails" id="syncMails-<%=folder%>">Sync <%=folder%></button>
+        </div>
             <table class="table table-striped">
                 <thead class="thead-dark">
                 <tr>
@@ -14,7 +17,7 @@
                 <tbody>
                 <% mails.forEach((mail, index) =>{ %>
 
-                    <tr id="<%=mail._id%>" class="pointer <%= mail.status ? '' : 'bold' %>">
+                    <tr id="<%=mail._id%>" class="mails-list pointer <%= mail.status ? '' : 'bold' %>">
                         <th scope="row"><%= (index + 1) %></th>
                         <td><%= mail.folder %></td>
                         <td><%= mail.sender.name %></td>
