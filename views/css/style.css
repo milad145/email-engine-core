@@ -21,6 +21,12 @@ body {
     margin: 50px auto;
 }
 
+.menu-container {
+    width: 95% !important;
+    border-radius: .25rem;
+    margin: 50px auto;
+}
+
 .wrapper {
     width: 50% !important;
     max-width: 700px;
@@ -300,4 +306,7 @@ body {
 
 .bold {
     font-weight: bold;
+}
+.bg-none{
+    background: none !important;
 }
