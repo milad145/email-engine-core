@@ -20,4 +20,4 @@ RUN mv sample.env .env
 EXPOSE 3000
 
 # Command to run your application
-CMD ["node", "app.js"]
+CMD ["node", "index.js"]
