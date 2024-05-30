@@ -25,6 +25,5 @@ Backend Web Developer TakeHome Challenge: Email Engine Core
     npm start
     ```
 
-   > **Note:** You can also attach the debugger included in Microsoft Visual Studio Code using the included [launch.json](.vscode/launch.json). For more information, see [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 
 1. Open a browser and go to [http://localhost:3000](http://localhost:3000).
